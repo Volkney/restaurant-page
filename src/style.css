@@ -1,0 +1,96 @@
+:root{
+    --gradient: linear-gradient(
+        45deg,
+        hsl(110deg 18% 93%) 0%,
+        hsl(96deg 19% 93%) 17%,
+        hsl(84deg 21% 92%) 25%,
+        hsl(73deg 22% 92%) 31%,
+        hsl(63deg 23% 91%) 37%,
+        hsl(53deg 27% 91%) 42%,
+        hsl(46deg 32% 91%) 47%,
+        hsl(40deg 37% 91%) 53%,
+        hsl(35deg 43% 91%) 58%,
+        hsl(31deg 48% 91%) 63%,
+        hsl(27deg 54% 91%) 69%,
+        hsl(24deg 59% 91%) 75%,
+        hsl(20deg 63% 91%) 83%,
+        hsl(17deg 67% 92%) 100%
+      );
+      --primary: #DA5E3B;
+      --complimentary: #ECF1EB;
+      --black: #1B1B1B;
+      --black75: #14050A;
+      --black50: #C3BCBD;
+      --black25: #CAC6C6;
+      --black10: #E6E2E2;
+      --black5: #F1EDED;
+      --error: #FD4D4B;
+    font-size: 21px;
+    --h1: 119px;
+    --h2: 84px;
+    --h3: 60px;
+    --h4: 42px;
+    --h5: 30px;
+    --h7: 11px;
+    font-family: 'Lora', serif;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+@import url('https://fonts.googleapis.com/css2?family=Lora&family=Source+Sans+Pro&display=swap');
+
+body {
+    background-image: var(--gradient);
+    font-family: Verdana;
+    font-weight: 600;
+  }
+  
+  .parent {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+  
+  .body{
+    display: flex;
+    flex-grow: 1;
+    flex-flow: row wrap;
+  }
+  
+  .parent > div {
+    font-family: 'Lora';
+    font-size: 1rem;
+    color: var(--black);
+    text-align: center;
+    background-image: var(--gradient);
+    border-bottom: 1px solid var(--black25);
+  }
+  
+  .header{
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+    margin: 1rem 1rem 4px 1rem;
+  }
+  
+  .head{
+    display:flex;
+    flex-flow: row wrap;
+  }
+  
+  .item{
+    margin-bottom: var(--h7);
+    padding: 0 1rem 0 1rem;
+  }
+  
+  .picture{
+    flex: 1;
+    background: url(./images/marble_vase.png);
+  }
+  
+  .picture2{
+    flex:1;
+    background: url(./images/marble_vase2.png); 
+    
+  }
+  .text{
+    flex:4;
+  }
