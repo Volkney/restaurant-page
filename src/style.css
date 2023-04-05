@@ -39,8 +39,6 @@
 
 body {
     background-image: var(--gradient);
-    font-family: Verdana;
-    font-weight: 600;
   }
   
   .parent {
@@ -80,17 +78,50 @@ body {
     margin-bottom: var(--h7);
     padding: 0 1rem 0 1rem;
   }
-  
+  .image-parent{
+    flex: 2;
+    padding: 20px;
+    gap: 10px;
+    display: flex;
+    align-items:flex-end;
+  }
   .picture{
     flex: 1;
     background: url(./images/marble_vase.png);
+    background-position: center; 
+    background-repeat: no-repeat;
+    height: 70%;
+    margin-bottom: 18px;
+    margin-left: 1rem;
   }
   
   .picture2{
-    flex:1;
+    flex: 2;
     background: url(./images/marble_vase2.png); 
-    
+    background-position: center; 
+    background-repeat: no-repeat;
+    height: 95%;
   }
-  .text{
+  .text-parent{
     flex:4;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    text-align: left;
+    margin: 7rem 0 0 2rem;
   }
+
+.text{
+    font-size: var(--h2);
+    font-weight: 400;
+    margin-left: 0;
+}
+span{
+    color: var(--primary);
+    margin-left: 40px;
+}
+.text-rights{
+  font-family: 'Source Sans Pro';
+  font-weight: 400;
+  font-size: var(--h7);
+}

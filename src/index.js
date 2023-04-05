@@ -37,15 +37,21 @@ header2.appendChild(item4);
 // create header3 element and its children
 const header3 = document.createElement('div');
 header3.classList.add('header3', 'head');
-const item5 = document.createElement('div');
+
+const item5 = document.createElement('a'); // Change div element to anchor (a) element
 item5.classList.add('item', 'five');
 item5.textContent = 'Dribble';
-const item6 = document.createElement('div');
+item5.href = 'https://dribbble.com/shots/16882751-Bloom-Shop-Design-Concept/attachments/11946349?mode=media'; // Add href attribute with the link URL
+const item6 = document.createElement('a'); // Change div element to anchor (a) element
 item6.classList.add('item', 'six');
 item6.textContent = 'Github';
-const item7 = document.createElement('div');
+item6.href = 'https://github.com/'; // Add href attribute with the link URL
+
+const item7 = document.createElement('a'); // Change div element to anchor (a) element
 item7.classList.add('item', 'seven');
 item7.textContent = 'Figma';
+item7.href = 'https://www.figma.com/'; // Add href attribute with the link URL
+
 
 // append items to header3
 header3.append(item5, item6, item7);
@@ -58,19 +64,27 @@ const childBody = document.createElement('div');
 childBody.classList.add('child', 'body');
 const content1 = document.createElement('div');
 content1.classList.add('content', 'picture');
-content1.textContent = '1';
+content1.textContent = '';
 const content2 = document.createElement('div');
 content2.classList.add('content', 'picture2');
-content2.textContent = '2';
+content2.textContent = '';
 const content3 = document.createElement('div');
 content3.classList.add('content', 'text');
-content3.textContent = '33';
-
+content3.innerHTML = '<p>Where Nature -<br><span>Brings the Beauty</span> <br>Est. 1999</p>';
+const content4 = document.createElement('div');
+content4.classList.add('content', 'text-rights');
+content4.textContent = '2023 All Rights Reserved';
+const textParent = document.createElement('div');
+textParent.classList.add('text-parent');
+const imageParent = document.createElement('div');
+imageParent.classList.add('image-parent');
+// append text div's to images
+imageParent.append(content1, content2);
+// append text div's to parentText
+textParent.append(content3, content4);
 // append content elements to child body
-childBody.append(content1, content2, content3);
-
+childBody.append(imageParent, textParent);
 // append child header and child body to parent
 parent.append(childHeader, childBody);
-
 // append parent to the document body
 document.body.appendChild(parent);
