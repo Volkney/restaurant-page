@@ -125,3 +125,26 @@ span{
   font-weight: 400;
   font-size: var(--h7);
 }
+
+.text-quote{
+  padding: 10px 0 10px 0;
+  border-bottom: 2px solid black;
+  border-top: 2px solid black;
+}
+
+.text-button {
+  padding: 1.7rem;
+  align-self: center;
+}
+
+button{
+  width: 180px;
+  background: none;
+  height: 60px;
+  border-radius: 50%;
+  border: 2px solid var(--primary);
+  transform: rotate(-10deg);
+}
+button:hover{
+  
+}
