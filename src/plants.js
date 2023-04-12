@@ -4,7 +4,7 @@ export default function plantsPage() {
   bdBody.classList.add('bdBody', 'active');
   const bdContent3 = document.createElement('div');
   bdContent3.classList.add('content', 'text');
-  bdContent3.innerHTML = 'Lejla is a silly butt';
+  bdContent3.innerHTML = 'For those seeking a loving touch in their floral arrangements';
   const bdContent1 = document.createElement('div');
   bdContent1.classList.add('content', 'bdPicture');
   bdContent1.textContent = '';
