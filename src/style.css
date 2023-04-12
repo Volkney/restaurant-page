@@ -77,6 +77,12 @@ body {
   .item{
     margin-bottom: var(--h7);
     padding: 0 1rem 0 1rem;
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+  }
+  .item:hover{
+    color: var(--error);
   }
   .image-parent{
     flex: 2;
@@ -144,7 +150,25 @@ button{
   border-radius: 50%;
   border: 2px solid var(--primary);
   transform: rotate(-10deg);
+
 }
 button:hover{
-  
+  background-color: var(--black25);
+}
+
+.non-active {
+  display: none;
+}
+
+.active{
+  display:flex;
+}
+
+/* birthday page CSS */
+.bdBody{
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  flex-flow: row wrap;
+  outline: 1px solid black;
 }
