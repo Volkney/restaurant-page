@@ -250,3 +250,29 @@ img:hover{
 li:hover{
   transform: scale(1.1);
 }
+
+
+/* about page */
+
+.aboutBody{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.aboutBody > *{
+  border: 1px solid black;
+}
+.aboutImage {
+  background: url(./images/garden.jpg);
+  background-position: center; 
+  background-repeat: no-repeat;
+  height: 75%;
+  width: 50%;
+}
+.aboutText{
+  width: 50ch;
+  height: 75%;
+  width: 50%;
+  
+}
