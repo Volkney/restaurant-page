@@ -156,10 +156,10 @@ button:hover{
   background-color: var(--black25);
 }
 
-.non-active {
+/* .non-active {
   display: none;
 }
-
+ */
 .active{
   display:flex;
 }
@@ -213,3 +213,27 @@ button:hover{
 }
 
 /* plants page CSS */
+.plantBody {
+  width: 100%;
+  margin: 10vw auto;
+}
+img {
+  object-fit:cover;
+  max-width: 100%;
+  height: 100%;
+  vertical-align: middle;
+  filter: grayscale(1);
+}
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+li {
+  border: 6px solid black;
+  flex-basis: 150px;
+}
+img:hover{
+  filter: grayscale(0);
+}

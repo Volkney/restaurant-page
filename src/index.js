@@ -3,6 +3,7 @@ import './style.css';
 import headerDisplay from './header';
 import homeDisplay from './home';
 import birthdayPage from './occasions';
+import plantsPage from './plants';
 
 // create parent element
 const parent = document.createElement('div');
@@ -11,6 +12,7 @@ document.body.append(parent);
 // initial home page
 const home = homeDisplay();
 const birthday = birthdayPage();
+const plants = plantsPage();
 parent.appendChild(headerDisplay());
 parent.appendChild(home);
 // add buttons from header.js
@@ -37,4 +39,14 @@ birthdayBtn.addEventListener('click', () => {
   // Remove current page and reassign its value
   parent.removeChild(parent.childNodes[1]);
   parent.appendChild(birthday);
+});
+
+plantsBtn.addEventListener('click', () => {
+  [homeBtn, birthdayBtn, aboutBtn].forEach((button) => {
+    button.classList.remove('active');
+  });
+  plantsBtn.classList.add('active');
+  // Remove current page and reassign its value
+  parent.removeChild(parent.childNodes[1]);
+  parent.appendChild(plants);
 });
