@@ -223,6 +223,7 @@ img {
   height: 100%;
   vertical-align: middle;
   filter: grayscale(1);
+  
 }
 ul {
   display: flex;
@@ -231,9 +232,21 @@ ul {
   gap: 10px;
 }
 li {
+  position: relative;
   border: 6px solid black;
   flex-basis: 150px;
+  transition: .3s;
+}
+figcaption{
+  opacity: 0;
+  position: absolute;
+  top: 0px;
+  color: var(--black25);
 }
 img:hover{
   filter: grayscale(0);
+  
+}
+li:hover{
+  transform: scale(1.1);
 }

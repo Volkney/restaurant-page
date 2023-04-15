@@ -36,6 +36,14 @@ export default function plantsPage() {
     figcaption.innerText = image.caption;
     li.appendChild(figcaption);
     ul.appendChild(li);
+
+    // add a hover effect to the figure element
+    img.addEventListener('mouseenter', () => {
+      figcaption.style.opacity = 1;
+    });
+    img.addEventListener('mouseleave', () => {
+      figcaption.style.opacity = 0;
+    });
   });
 
   // add the unordered list element to the main element

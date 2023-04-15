@@ -44,7 +44,7 @@ export default function headerDisplay() {
   const item7 = document.createElement('a'); // Change div element to anchor (a) element
   item7.classList.add('item', 'seven');
   item7.textContent = 'Figma';
-  item7.href = 'https://www.figma.com/'; // Add href attribute with the link URL
+  item7.href = 'https://www.figma.com/file/N19dSEkInQ6ma84QxobAuX/Flower-Shop?node-id=0-1&t=Ouy3hf0OxlzqSoDr-0'; // Add href attribute with the link URL
   // append items to header3
   header3.append(item5, item6, item7);
 
