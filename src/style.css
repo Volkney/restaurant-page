@@ -260,9 +260,7 @@ li:hover{
   align-items: center;
   height: 100%;
 }
-.aboutBody > *{
-  border: 1px solid black;
-}
+
 .aboutImage {
   background: url(./images/garden.jpg);
   background-position: center; 
@@ -271,8 +269,9 @@ li:hover{
   width: 50%;
 }
 .aboutText{
+  display: flex;
+  align-items: center;
   width: 50ch;
   height: 75%;
   width: 50%;
-  
 }
