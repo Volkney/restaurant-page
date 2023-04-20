@@ -7,6 +7,12 @@
 * [Live of the Repo](https://volkney.github.io/restaurant-page/)
 * [Dribble Inspiration Website](https://dribbble.com/shots/16882751-Bloom-Shop-Design-Concept/attachments/11946349?mode=media)
 
+### future improvements 
+* Make responsive designs
+* add smoother animations for *plants* page
+* reword description for *about* page
+
+
 
 
 
